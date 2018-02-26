@@ -1,0 +1,13 @@
+$(function(){
+	$(".tongyong>a>img").mouseenter(function(){
+		$(".tongyong>a>img").css({
+			transform:"scale(1.3,1.3)",
+			transitionDelay:".2s",
+		})
+	}).mouseleave(function(){
+		$(".tongyong>a>img").css({
+			transform:"scale(1,1)",
+			transitionDelay:".2s",
+		})
+	})
+})

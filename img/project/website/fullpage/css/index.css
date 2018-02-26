@@ -1,0 +1,614 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font:16px/1.8 "Microsoft Yahei",verdana;
+}
+
+/*背景图片*/
+.section{
+	position: relative;
+	overflow: hidden;
+}
+.section .bg{
+	position: absolute;
+	left: 0;top: 0;
+	width: 100%;
+	height: 100%;
+}
+.section .bg img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/*第一屏*/
+.bg11{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 850px;
+	background: url(../images/bg11.png) 50% 0 no-repeat;
+	transition:all 1s;
+}
+.bg12{
+	position: absolute;
+	bottom: -392px;
+	width: 100%;
+	height: 392px;
+	background: url(../images/bg12.png) 50% 0 no-repeat;
+	opacity: 0;
+	transition:all 1.7s;
+	bottom: 90px\0;/*只有IE8有此css规则，表示:下外边距为90px*/
+}
+.bg13{
+	position: absolute;
+	bottom: -377px;
+	width: 100%;
+	height: 377px;
+	background: url(../images/bg13.png) 50% 0 no-repeat;
+	transition:all 1s;
+}
+.mail{
+	position: absolute;
+	left: 50%;
+	top: -26px;
+	width: 375px;
+	height: 26px;
+	margin-left: -187px;
+	background: url(../images/logo.png);
+	transition:all 1s;
+	float: left;
+}
+.mail a{
+	display: block;
+}
+.mail-163{ 
+	float: left; 
+	width: 107px;
+	height: 100%;
+}
+.mail-126{ 
+	float: left;
+	width: 108px; 
+	height: 100%;
+	margin-left: 23px;
+}
+.mail-yeah{ 
+	float: right; 
+	width: 115px;
+	height: 100%;
+}
+.hgroup{
+	position: absolute;
+	width: 554px;
+	height: 176px;
+	left: 50%;
+	top: 25%;
+	margin-left:-277px;
+	background: url(../images/slogan.png);
+	opacity: 0;
+	transform:scale(0.5,0.5);
+	transition:all 1s;
+}
+.p1{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 600px;
+	margin-left: -280px;
+	font-size: 14px;
+	color: #94a7c6;
+	opacity: 0;
+	transition:all 0.5s;
+}
+
+/*第二屏*/
+.bg21{
+	position: absolute;
+	left: 50%;
+	bottom: 15%;
+	width: 819px;
+	height: 250px;
+	margin-left: -608px;
+	margin-bottom: 40px;
+	background: url(../images/bg21.png) 0 0 no-repeat;
+	transition:all 1s;
+	opacity: 0;
+	margin-left: -1108px;
+}
+.bg22{
+	position: absolute;
+	left: 50%;
+	bottom: 15%;
+	width: 819px;
+	height: 299px;
+	margin-left: -280px;
+	margin-bottom: 70px;
+	background: url(../images/bg22.png) right 0 no-repeat;
+	transition:all 1s;
+	opacity: 0;
+	margin-left: 320px;
+}
+.bg23{
+	position: absolute;
+	left: 50%;
+	bottom: 15%;
+	width: 819px;
+	height: 325px;
+	margin-left: -409px;
+	background: url(../images/bg23.png) 50% 0 no-repeat;
+	transition:all 1s;
+	bottom: -40%;
+}
+.section strong{
+	position: absolute;
+	left: 50%;
+	top: 15%;
+	z-index: 10;
+	width: 512px;
+	height: 45px;
+	margin-left: -256px;
+	font-size: 24px;
+	color: #748a9e;
+	font-weight: 500;
+	opacity: 0;
+	transform:scale(0.5,0.5);
+	transition:all 1s;
+}
+.section h3{
+	position: absolute;
+	left: 50%;
+	top: 15%;
+	z-index: 10;
+	width: 512px;
+	height: 45px;
+	margin-left: -256px;
+	margin-top:60px;
+	opacity: 0;
+	transform:scale(0.5,0.5);
+	transition:all 1s;
+}
+.p2{
+	position: absolute;
+	left: 50%;
+	top: 15%;
+	width: 510px;
+	margin-left: -255px;
+	margin-top: 130px;
+	font-size: 16px;
+	color: #727f8c;
+	opacity: 0;
+	transition:all 1s;
+}
+.section2 h3{
+	background: url(../images/t2.png) no-repeat;
+}
+
+/*第三屏*/
+.bg31{
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: 892px;
+	height: 472px;
+	margin-left: -396px;
+	margin-bottom: 80px;
+	background: url(../images/bg31.png);
+	opacity: 0;
+	transition:all 1s;
+}
+.bg32{
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: 892px;
+	height: 472px;
+	margin-left: -396px;
+	background: url(../images/bg32.png) 470px bottom no-repeat;
+	opacity: 0;
+	transition:all 1s;
+}
+.bg33{
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: 441px;
+	height: 380px;
+	margin-left: 50%;
+	background: url(../images/bg33.png) 0 0 no-repeat;
+	transition:all 1s;
+}
+.p3{
+	position: absolute;
+	width: 430px;
+	left: 50%;
+	top: 15%;
+	margin-top: 250px;
+	margin-left: -100%;
+	font-size: 16px;
+	color: #fffde1;
+	opacity: 0;
+	transition:all 1s;
+}
+.section3 h3{
+	background: url(../images/t3.png);
+}
+
+/*第四屏*/
+.bg41{
+	position: absolute;
+	bottom: -372px;
+	width: 100%;
+	height: 372px;
+	background: url(../images/bg41.png) 50% 0 no-repeat;
+	transition:all 1s;
+}
+.bg42,.bg43{
+	position: absolute;
+	bottom: -449px;
+	width: 100%;
+	height: 449px;
+}
+.bg42{
+	background: url(../images/bg42.png) 50% 0 no-repeat;
+	transition:all 1s;
+}
+.bg43{
+	margin-bottom: -130px;
+	background: url(../images/bg43.png) 50% 0 no-repeat;
+	transition:all 1s;
+}
+.p4{
+	position: absolute;
+	left: 50%;
+	top: 15%;
+	width: 510px;
+	margin-left: -255px;
+	margin-top: 130px;
+	font-size: 16px;
+	color: #727f8c;
+	opacity: 0;
+	transition:all 1s;
+}
+.section4 h3{
+	background: url(../images/t4.png);
+}
+
+/*第五屏*/
+.bg51,.bg52,.bg53,.bg54{
+	position: absolute;
+	z-index: 1;
+	width: 208px;
+	left: 50%;
+	bottom: 20%;
+	padding-top: 210px;
+	color: #fff;
+}
+.bg51{
+	margin-left: -851px;
+	background: url(../images/bg51.png) 50% 0 no-repeat;
+	opacity: 0;
+	transition:all 1s;
+}
+.bg52{
+	margin-left: -403px;
+	background: url(../images/bg52.png) 50% 0 no-repeat;
+	opacity: 0;
+	transition:all 1s;
+}
+.bg53{
+	margin-left: 195px;
+	background: url(../images/bg53.png) 50% 0 no-repeat;
+	opacity: 0;
+	transition:all 1s;
+}
+.bg54{
+	margin-left: 645px;
+	background: url(../images/bg54.png) 50% 0 no-repeat;
+	opacity: 0;
+	transition:all 1s;
+}
+.section5 h4{
+	font-size: 23px;
+	font-weight: 500;
+	margin-bottom: 12px;
+}
+.section5 p{
+	font-size: 14px;
+}
+.section5 h3{
+	background: url(../images/t5.png);
+}
+
+/*第六屏*/
+.bg61{
+	position: absolute;
+	top: -454px;
+	width: 100%;
+	height: 545px;
+	background: url(../images/bg61.png) 50% 0 no-repeat;
+	transition:all 1s;
+}
+.bg62{
+	position: absolute;
+	left: 10%;
+	bottom: 20%;
+	width: 597px;
+	height: 284px;
+	margin-left: -507px;
+	background: url(../images/bg62.png);
+	transition:all 1s;
+}
+.text6{
+	position: absolute;
+	left: 90%;
+	bottom: 20%;
+	width: 447px;
+	margin-left: 90px;
+	transition:all 1s;
+}
+.text6 p{
+	margin-bottom: 17px;
+	color: #5c7970;
+}
+.section6 strong,.section7 strong,.section8 strong{
+	width: 561px;
+	margin-left: -280px;
+}
+.section6 h3,.section7 h3,.section8 h3{
+	width: 561px;
+	margin-left: -280px;
+}
+.section6 h3{
+	background: url(../images/t6.png);
+}
+
+/*第七屏*/
+.bg71{
+	position: absolute;
+	left: 50%;
+	bottom: -201px;
+	width: 699px;
+	height: 201px;
+	margin-left: -630px;
+	background: url(../images/bg71.png) 50% 0 no-repeat;
+	opacity: 0;
+	transition:all 1s;
+}
+.bg72{
+	position: absolute;
+	left: 50%;
+	bottom: -206px;
+	width: 182px;
+	height: 206px;
+	margin-left: -170px;
+	background: url(../images/bg72.png) 50% 0 no-repeat;
+	opacity: 0;
+	transition:all 1s;
+}
+.bg73{
+	position: absolute;
+	left: 50%;
+	bottom: 170px;
+	width: 651px;
+	height: 231px;
+	margin-left: -530px;
+	background: url(../images/bg73.png) 50% 0 no-repeat;
+}
+.bg74 img{
+	position: absolute;
+	left: 0;bottom: 0;
+	width: 100%;
+	height: 251px;
+}
+.text7{
+	position: absolute;
+	left: 50%;
+	bottom: -150px;
+	width: 420px;
+	margin-left: 100px;
+	opacity:0;
+	transition:all 1s;
+}
+.text7 p{
+	margin-bottom: 17px;
+	color: #eaeff2;
+}
+.section7 h3{
+	background: url(../images/t7.png);
+}
+
+/*第八屏*/
+.bg81{
+	position: absolute;
+	bottom: 100px;
+	width: 100%;
+	height: 215px;
+	background: url(../images/bg81.png) 50% 0 no-repeat;
+}
+.bg82{
+	position: absolute;
+	left: 50%;
+	bottom: 160px;
+	width: 164px;
+	height: 117px;
+	margin-left: -180px;
+	background: url(../images/bg82.png);
+	opacity: 0;
+	transition:all 1s;
+}
+.bg83{
+	position: absolute;
+	left: 50%;
+	bottom: 280px;
+	width: 70px;
+	height: 29px;
+	margin-left: -330px;
+	background: url(../images/bg83.png);
+	opacity: 0;
+	transition:all 1s;
+}
+.bg84{
+	position: absolute;
+	left: 50%;
+	bottom: 320px;
+	width: 43px;
+	height: 26px;
+	margin-left: -410px;
+	background: url(../images/bg84.png);
+	opacity: 0;
+	transition:all 1s;
+}
+.p8{
+	position: absolute;
+	left: 50%;
+	top: 15%;
+	width: 565px;
+	margin-left: -282px;
+	margin-top: 130px;
+	font-size: 16px;
+	color: #727f8c;
+	opacity: 0;
+	transition:all 1s;
+}
+.section8 h3{
+	background: url(../images/t8.png);
+}
+
+/*第九屏*/
+.bg91,.bg92,.bg93{
+	padding-top: 350px;
+	font-size: 16px;
+	color: #fff;
+}
+.bg91{
+	position: absolute;
+	left: 50%;
+	bottom: 15%;
+	width: 340px;
+	margin-left: -970px;
+	background: url(../images/bg91.png) 0 0 no-repeat;
+	opacity: 0;
+	transition:all 1s;
+}
+.bg91 p{
+	position: relative;
+	left: 20px;
+	margin-left: 40px;
+	border-right: 1px solid #13ab86;
+}
+.bg92{
+	position: absolute;
+	left: 50%;
+	bottom: 15%;
+	width: 340px;
+	margin-left: -180px;
+	background: url(../images/bg92.png) 50% 0 no-repeat;
+	opacity: 0;
+	transition:all 1s;
+}
+.bg92 p{
+	position: relative;
+	left: 40px;
+	margin-left: 30px;
+}
+.bg93{
+	position: absolute;
+	left: 50%;
+	bottom: 15%;
+	width: 340px;
+	margin-left: 630px;
+	background: url(../images/bg93.png) 50% 0 no-repeat;
+	opacity: 0;
+	transition:all 1s;
+}
+.bg93 p{
+	position: relative;
+	left: -20px;
+	padding-left: 100px;
+	border-left: 1px solid #13ab86;
+}
+.section9 strong{
+	width: 609px;
+	margin-left: -304px;
+}
+.section9 h3{
+	width: 609px;
+	margin-left: -304px;
+	background: url(../images/t9.png);
+}
+.section9 h3 span{
+	position: absolute;
+	left: -100px;
+	top: -48px;
+	width: 89px;
+	height: 90px;
+	background: url(../images/yixin.png);
+}
+
+/*第十屏*/
+.bg101{
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	margin-left: -50%;
+	background: url(../images/bg101.png) 50% 20% no-repeat;	
+}
+.bg102{
+	position: absolute;
+	top: 25%;
+	width: 100%;
+	height: 79px;
+	background: url(../images/bg102.png) 50% 0 no-repeat;
+	opacity: 0;
+	transform:scale(0.5,0.5);
+	transition:all 1s;
+}
+.bg103{
+	position: absolute;
+	top: 25%;
+	width: 100%;
+	height: 37px;
+	margin-top: 110px;
+	background: url(../images/bg103.png) 50% 0 no-repeat;
+	opacity: 0;
+	transform:scale(0.5,0.5);
+	transition:all 1s;
+}
+.tiyan{
+	position: absolute;
+	left: 50%;
+	top: 55%;
+	width: 254px;
+	height: 70px;
+	margin-top: 220px;
+	margin-left: -127px;
+	background: url(../images/btn.png);
+	opacity: 0;
+	transition:all 1s;
+	/*background:#FFB400;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 40px;
+	text-decoration: none;
+	line-height: 70px;
+	color: #fff;
+	font-weight:500;*/
+}
+.copy-info{
+	position: absolute;
+	left: 0;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+	font-size: 0;
+}
+.copy-info a,.copy-info span{
+	margin: 0 7px;
+	font-size: 12px;
+	color: #a0a0a0;
+}

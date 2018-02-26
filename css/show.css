@@ -1,0 +1,233 @@
+body,html,ul,li{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	list-style: none;
+}
+img{
+	display: block;
+}
+a{
+	text-decoration: none;
+	font-size: 14px;
+}
+
+/*字体设计*/
+.tongyong{
+	position: relative;
+	height: 100%;
+	background-color: rgba(0,0,0,.8);
+}
+.tongyong .ty{
+	position: absolute;
+	width: 600px;
+	left:calc(50% - 300px);
+	cursor: pointer;
+	transition:all 0.8s;
+}
+.tongyong .zt{
+	top: calc(50% - 174px);	
+}
+
+/*logo设计*/
+.tongyong .logo{
+	top: calc(50% - 209px);
+}
+
+/*展板设计*/
+.tongyong .zb{
+	top: calc(50% - 225px);
+}
+
+/*X展架*/
+.tongyong .xzj{
+	width: 500px;
+	top: calc(50% - 249px);
+	left:calc(50% - 250px);
+}
+
+/*二折页*/
+.tongyong .ezy{
+	top: calc(50% - 206px);
+}
+
+/*banner设计*/
+.no-ty{
+	background-color: transparent;
+}
+.tongyong .banner{
+	width: 800px;
+	left: calc(50% - 400px);
+}
+
+/*功能与主题图标设计*/
+.tongyong .icon,.tongyong .zticon{
+	width: 660px;
+	left: calc(50% - 330px);
+	top: calc(50% - 186px);
+}
+
+/*网站的实现*/
+.no-ty1{
+	background-color: #ccc;
+}
+.tongyong .website-list{
+	width: 1200px;
+	height: 300px;
+	/*background-color: #fff;*/
+	position: absolute;
+	left:calc(50% - 600px);
+	top: calc(50% - 150px);
+}
+.tongyong .website-list li{
+	width: calc(100% / 4 - 20px);
+	height: 100%;
+	float: left;
+	margin: 0 10px;
+}
+.tongyong .website-list li a{
+	display: block;
+	height: 100%;
+	position: relative;
+}
+.tongyong .website-list li a .website-info{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.8);
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	line-height: 300px;
+	color: #F4D03F;
+	display: none;
+}
+.tongyong .website-list li a:hover .website-info{
+	display: block;
+}
+.tongyong .back-index{
+	width:88px;
+	height:36px;
+	display:block;
+	background-color:#555;
+	color:#fff;
+	text-align:center;
+	line-height:36px;
+	border-radius:5px;
+	position:absolute;
+	left:calc(50% - 44px);
+	bottom:100px;
+	z-index: 9999;
+}
+.tongyong .back-index:hover{
+	color: #F4D03F;
+	transition:color .5s ease;
+}
+
+/*网页界面设计*/
+.tongyong .webdesign-list li{
+	width: calc(100% / 3 - 20px);
+	overflow: hidden;
+}
+
+
+/*响应式*/
+@media (max-width: 767px) {
+	.tongyong .website-list{
+		width: 400px;
+		top: 20px;
+		left:calc(50% - 200px);
+	}
+  	.tongyong .website-list li{
+		width: calc(100% - 20px);
+		margin:0 20px 20px 0;
+	}
+	.tongyong .back-index{
+		font-size: 28px;
+		background-color: #F4D03F;
+		color: #222;
+	}
+	.tongyong .back-index:hover{
+		color: #222;
+	}
+	.tongyong .back-index2{
+		width: 400px;
+		height: 88px;
+		line-height: 88px;
+		bottom:-592px;
+		left:calc(50% - 200px);
+	}
+	.tongyong .back-index1{
+		width: 400px;
+		height: 88px;
+		line-height: 88px;
+		left:calc(50% - 200px);
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.tongyong .website-list{
+		width: 900px;
+		height: 300px;
+		top: 20px;
+		left:calc(50% - 450px);
+	}
+	.tongyong .website-list li{
+		width: calc(100% / 2 - 20px);
+		margin:0 20px 20px 0;
+	}
+	.tongyong .webdesign-list li{
+		width: calc(100% - 20px);
+		margin:0 20px 20px 0;
+	}
+	.tongyong .back-index{
+		font-size: 28px;
+		background-color: #F4D03F;
+		color: #222;
+	}
+	.tongyong .back-index:hover{
+		color: #222;
+	}
+	.tongyong .back-index2{
+		width: 900px;
+		height: 88px;
+		line-height: 88px;
+		bottom:42px;
+		left:calc(50% - 450px);
+	}
+	.tongyong .back-index1{
+		width: 900px;
+		height: 88px;
+		line-height: 88px;
+		left:calc(50% - 450px);
+	}
+	.tongyong .ty{
+		width: 820px;
+		left:calc(50% - 410px);
+	}
+	.tongyong .zt{
+		top: calc(50% - 231px);
+	}
+	.tongyong .logo{
+		top: calc(50% - 285px);
+	}
+	.tongyong .zb{
+		top: calc(50% - 307px);
+	}
+	.tongyong .xzj{
+		top: calc(50% - 408px);
+	}
+	.tongyong .ezy{
+		top: calc(50% - 281px);
+	}
+	.tongyong .icon,.tongyong .zticon{
+		top: calc(50% - 230px);
+	}
+	.tongyong .app{
+		top: calc(50% - 617px);
+	}
+}
+
+
+
+
